@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Session5 - assignment3 </title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<style type="text/css">
+			#divElement {
+				display: block;
+				background-color: antiquewhite;
+				padding: 10px;
+				margin: 10px;
+			}
+		</style>
+		
+		
+		<body>
+			<h1>Session 5: Jquery Assignment3</h1>
+			<div id="divElement">
+				<ui class="myList">
+					<li>Html Tutorial</li>
+					<li>Mongodb Tutorial</li>
+					<li>Python Tutorial</li>
+				</ui>
+			</div>
+			
+			<button type="button" onclick="addBold()">addIndex values</button>
+			
+			<script>
+
+				$(document).ready(function(){
+
+					addBold = function(){
+						$("li").prepend(function(n){
+							return "<b>"+ n + ":  " +  "</b>";
+						});
+					}
+				});
+
+			</script>
+		</body>
+	</head>
+	</html>

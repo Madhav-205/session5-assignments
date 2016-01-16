@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Session5 - assignment4 </title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<style type="text/css">
+			#divElement {
+				display: block;
+				background-color: antiquewhite;
+				padding: 10px;
+				margin: 10px;
+			}
+		</style>
+		
+		
+		<body>
+			<h1>Session 5: Jquery Assignment4</h1>
+			<div id="divElement">
+				<p><span>http://www.acadgild.com</span></p>
+				<a href="http://www.acadgild.com" target="_blank" id="acadgild">Acad Gild</a>
+			</div>
+			
+			<button type="button" id="button">change hyperlink and text value</button>
+			
+			<script>
+
+				$(document).ready(function(){
+
+					$('#button').click(function(){
+						nextext = "google";
+						$("#acadgild").attr( "href", "http://www.google.com").text(nextext);
+						$('#divElement p span').text(nextext);
+					});
+					
+				});
+
+			</script>
+		</body>
+	</head>
+	</html>

@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Session5 - assignment2 </title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<style type="text/css">
+			#divElement {
+				display: block;
+				background-color: antiquewhite;
+				padding: 10px;
+				margin: 10px;
+			}
+		</style>
+		
+		<script>
+			
+			$(document).ready(function(){
+				
+				hideForm = function(){
+					$('#demo_form input').hide();
+				}
+				
+				showForm = function(){
+					$('#demo_form input').show();
+				}
+			});
+				
+		</script>
+		<body>
+			<h1>Session 5: Jquery Assignment2</h1>
+			<div id="divElement">
+				<form id='demo_form' name="demo_form">
+					First name: <input type="text" name="fname"><br>
+					Last name: <input type="text" name="lname"><br>
+					<input type="submit" value="Submit">
+				</form>
+			</div>
+			
+			<button type="button" onclick="hideForm()">Hide Form inputs</button>
+			<button type="button" onclick="showForm()">Show Form inputs</button>
+		</body>
+	</head>
+	</html>
